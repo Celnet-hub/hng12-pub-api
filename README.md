@@ -166,7 +166,7 @@ Example response:
 ```json
 {
     "email": "dubemnwabuisi@gmail.com",
-    "timestamp": "2023-10-05T12:34:56.789Z",
+    "current_datetime": "2023-10-05T12:34:56.789Z",
     "github_url": "https://github.com/yourusername/your-repo"
 }
 ```

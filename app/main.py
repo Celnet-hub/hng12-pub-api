@@ -8,7 +8,7 @@ app = FastAPI()
 # Set up CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # allows all origins
+    allow_origins=["*"],  # allows all origin
     allow_credentials=True,
     allow_methods=["GET"],
 )
@@ -19,8 +19,9 @@ async def root():
 
 @app.get("/info")
 async def get_info():
+    current_datetime = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
     return {
         "email": "dubemnwabuisi@gmail.com",
-        "timestamp": datetime.now().isoformat(),
+        "current_datetime": current_datetime,
         "github_url": "https://github.com/Celnet-hub/hng12-pub-api"
     }
